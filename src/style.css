@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+
+.globalHeader {
+  margin: 20px;
+}
+
+@media(min-width: 500px) {
+  .globalHeader {
+    margin: 60px;
+  }
+}
+
+.searchForm {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+@media(min-width: 500px) {
+  .searchForm {
+    justify-content: center;
+  }
+
+}
+
+.searchForm>input {
+  width: 100%;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0 10px;
+  height: 40px;
+}
+
+@media(min-width: 500px) {
+  .searchForm>input {
+    width: 500px;
+  }
+}
+
+.searchForm>button {
+  white-space: nowrap;
+  padding: 0 28px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background: #0282B9;
+}
+
+.globalMain {
+  margin: 20px;
+}
+
+@media(min-width: 500px) {
+  .globalMain {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.siteList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+@media(min-width: 500px) {
+  .siteList {
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+}
+
+.siteList .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #DDD;
+  position: relative;
+  cursor: pointer;
+}
+
+@media(min-width: 500px) {
+  .siteList .site:hover {
+    box-shadow: 0 10px 10px rgb(131, 131, 131);
+    margin-top: -10px;
+    transition: 0.35s;
+  }
+}
+
+@media(min-width: 500px) {
+  .siteList .site {
+    margin-bottom: 20px;
+    margin-right: 25px;
+  }
+}
+
+.siteList .site>.logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.siteList .site>.link {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.siteList .site>.close {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}
+
+@media(min-width: 500px) {
+  .siteList .site>.close {
+    display: none;
+  }
+
+  .siteList .site:hover>.close {
+    display: block;
+  }
+}
+
+.siteList .addButton {
+  border: 1px solid #DDD;
+  background: white;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.siteList .addButton .icon {
+  width: 56px;
+  height: 56px;
+}
+
+.siteList .addButton .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.siteList .addButton .icon-wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
