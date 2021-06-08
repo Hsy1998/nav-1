@@ -78,3 +78,7 @@ $(document).on('keypress', (e) => {
 
   }
 })
+
+$('.searchForm>input').on('keypress', (e) => { // input输入小写字母时会打开对应保存的网址，阻止input冒泡即可
+  e.stopPropagation(); // 取消冒泡
+})
